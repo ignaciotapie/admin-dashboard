@@ -1,0 +1,144 @@
+:root{
+    font-size: 2.2vh;
+}
+
+body{
+    font-family: 'Roboto Mono', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex: 1 1 auto;
+
+    /*Custom Variables*/
+
+    --project-blue: #1C92D2;
+    --background-color: #526f8445;
+    --font-color-white: white;
+    --font-color-black: black;
+    --header-bg-color: white;
+
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+.sidebar h1{
+    color: var(--font-color-white);
+    font-weight: bold;
+
+}
+
+.sidebar h3{
+    color: var(--font-color-white);
+}
+/*-------------------------SIDEBAR BEGIN-----------------------*/
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    gap: 2vh;
+    min-width:fit-content;
+    background-color: var(--project-blue);
+    padding: 1rem 2rem;
+
+
+    box-shadow: 0.1rem 0rem 0.2rem var(--background-color);
+}
+
+.logo{
+
+}
+
+.properties{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+
+/*-------------------------SIDEBAR END-------------------------*/
+
+
+
+/*-------------------------CONTENT BEGIN-----------------------*/
+.content{
+    display:flex;
+    flex: 1;
+}
+
+/*-------------------------HEADER BEGIN-----------------------*/
+.header{
+    display:flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    height: 15%;
+
+    background-color: var(--header-bg-color);
+
+    box-shadow: 0rem 0.2rem 0.2rem var(--background-color);
+}
+
+.upper-header{
+    display:flex;
+    flex:1;
+    justify-content: space-between;
+}
+
+.search-bar{
+    display:flex;
+    flex: 1;
+}
+
+.search-bar input{
+    border-style: none;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    font-size: 1rem;
+    height: 1.5em;
+    width: 70%;
+    padding: 0rem 1rem;
+}
+
+.search-bar input:focus{
+    outline-style: none;
+}
+
+.account-info{
+    display:flex;
+    overflow:hidden;
+    margin-left: 1rem;
+}
+.account-info h3{
+    color: var(--font-color-black);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.lower-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-header buttons{
+    background-color: var(--project-blue);
+    color: var(--font-color-white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/*-------------------------HEADER END-------------------------*/
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-section{
+    flex: 1;
+    background-color: var(--background-color);
+}
+
+
+/*-------------------------CONTENT END-------------------------*/
