@@ -9,6 +9,8 @@
     <title>Admin Dashboard</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     </style>
 
     <script src="./code.js" defer></script>
@@ -19,17 +21,17 @@
             <h1>Dashboard</h1>
         </div>
         <div class="properties">
-            <h3>Home</h3>
-            <h3>Profile</h3>
-            <h3>Messages</h3>
-            <h3>History</h3>
-            <h3>Tasks</h3>
-            <h3>Communities</h3>
+            <h3><a href="#">Home</a></h3>
+            <h3><a href="#">Profile</a></h3>
+            <h3><a href="#">Messages</a></h3>
+            <h3><a href="#">History</a></h3>
+            <h3><a href="#">Tasks</a></h3>
+            <h3><a href="#">Communities</a></h3>
         </div>
         <div class="properties">
-            <h3>Settings</h3>
-            <h3>Support</h3>
-            <h3>Privacy</h3>
+            <h3><a href="#">Settings</a></h3>
+            <h3><a href="#">Support</a></h3>
+            <h3><a href="#">Privacy</a></h3>
         </div>
     </div>
     <div class="content">
@@ -56,18 +58,74 @@
             </div>
         </div>
         <div class="feed-section">
+            <div class="feed-grid">
             <div class="projects">
                 <h3>Your projects: </h3>
                 <div class="project-grid">
-                    <div class="project-element">Super Cool Project</div>
-                    <div class="project-element">Less Cool Project</div>
-                    <div class="project-element">Impossible App</div>
-                    <div class="project-element">Easy Peasy App</div>
-                    <div class="project-element">Ad Blocker</div>
-                    <div class="project-element">Money Maker</div>
+                    <div class="project-element">
+                        <div class="color-accent"></div>
+                        <h2>Super Cool Project</h2>
+                        <h3>Some other description.</h3>
+                        <div class="project-icons">
+                            <img>
+                            <img>
+                            <img>
+                        </div>
+                    </div>
+                    <div class="project-element">
+                        <div class="color-accent"></div>
+                        <h2>Less Cool Project</h2>
+                        <h3>Some other description.</h3>
+                    </div>
+                    <div class="project-element">
+                        <div class="color-accent"></div>
+                        <h2>Impossible App</h2>
+                        <h3>Some other description.</h3>
+                    </div>
+                    <div class="project-element">
+                        <div class="color-accent"></div>
+                        <h2>Easy Peasy App</h2>
+                        <h3>Some other description.</h3>
+                    </div>
+                    <div class="project-element">
+                        <div class="color-accent"></div>
+                        <h2>Ad Blocker</h2>
+                        <h3>Some other description.</h3>
+                    </div>
+                    <div class="project-element">
+                        <div class="color-accent"></div>
+                        <h2>Money Maker</h2>
+                        <h3>Some other description.</h3>
+                    </div>
                 </div>
             </div>
-            <div class="not-projects"></div>
+            <div class="announcements">
+                <h1>Announcements:</h1>
+                <div class="announcement-flex">
+                    <div>
+                        <h1>Announcement</h1>
+                        <h2>ipsum</h2>
+                    </div>
+                    <div>
+                        <h1>Announcement</h1>
+                        <h2>ipsum</h2>
+                    </div>
+                    <div>
+                        <h1>Announcement</h1>
+                        <h2>ipsum</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h1>Trending:</h1>
+                <div class="trending-flex">
+                    <div>Usuario Numero 30000</div>
+                    <div>Usuario Numero 30001</div>
+                    <div>Usuario Numero 30002</div>
+                    <div>Usuario Numero 30003</div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </body>
