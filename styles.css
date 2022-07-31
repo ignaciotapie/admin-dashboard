@@ -1,5 +1,5 @@
 :root{
-    font-size: 2.2vh;
+    font-size: 2.2vmin;
 }
 
 body{
@@ -40,6 +40,8 @@ h4{
 .sidebar{
     display:flex;
     flex-direction: column;
+    position:sticky;
+
     gap: 2vh;
     min-width:fit-content;
     background-color: var(--project-blue);
@@ -74,11 +76,13 @@ h4{
     display:flex;
     flex-direction: column;
     padding: 0.7rem;
-    height: 15%;
+    height: 12%;
 
     background-color: var(--header-bg-color);
 
     box-shadow: 0rem 0.2rem 0.2rem var(--background-color);
+
+    overflow: hidden;
 }
 
 .upper-header{
@@ -121,7 +125,11 @@ h4{
     display: flex;
     justify-content: space-between;
 }
-
+.buttons{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
 .lower-header buttons{
     background-color: var(--project-blue);
     color: var(--font-color-white);
@@ -136,8 +144,30 @@ h4{
 }
 
 .feed-section{
+    display:flex;
     flex: 1;
     background-color: var(--background-color);
+    padding: 1rem;
+}
+
+.projects{
+    flex:2;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.not-projects{
+    flex:1;
+}
+
+.project-element{
+    background-color: var(--font-color-white);
+    display:flex;
+    flex:1;
 }
 
 
